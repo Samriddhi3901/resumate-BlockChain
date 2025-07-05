@@ -1,0 +1,330 @@
+.resume-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  label{
+    padding-right: 2pt;
+  }
+  
+  .a4-page{
+    width: 21cm;
+    min-height: 29.7cm;
+    background-color: #fff;
+    position: relative;
+  }
+  
+  .warning-line {
+    position: absolute;
+    top: calc(29.7cm - 20px);
+    z-index: 1;
+    margin: 0;
+    width: 100%;
+    border: 0;
+    border-top: 3px dotted red;
+  }
+  
+  .warning-message {
+    position: absolute;
+    width: 100px;
+    text-align: right;
+    top: calc(29.7cm - 13px);
+    z-index: 1;
+    margin: 0;
+    left: -110px;
+    color: red;
+  }
+  
+  .resume-print{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    color: red;
+  }
+  
+  .resume-print li{
+    padding-right: 20px;
+  }
+  
+  .resume-print button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 3vh;
+    padding: 0px 25px;
+    margin: 0px 10px;
+    height: 60px;
+    /* width: 200px; */
+    background-color: #005BA2;
+    border: 0;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 2.2vh;
+    cursor: pointer;
+  }
+  
+  .resume-control-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10vh;
+    height: 8vh;
+    position: fixed;
+    background-color: #fff;
+    border-radius: 40% 0% 0% 40%;
+    top: 28vh;
+    right: 0;
+    border: 0;
+    outline: 0;
+  }
+  
+  .feedback-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10vh;
+    height: 8vh;
+    position: fixed;
+    background-color: #fff;
+    border-radius: 40% 0% 0% 40%;
+    top: 40vh;
+    right: 0;
+    border: 0;
+    outline: 0;
+  }
+
+  /* Comon */
+  .horizontal-rule {
+    height: 0;
+    margin: 5px 0px;
+    width: 100%;
+    border-top: 1px solid black;
+    opacity: 0.6;
+  }
+
+  .italics {
+    font-style: italic;
+  }
+
+  #maang-resume .section-heading {
+    font-size: 13pt;
+    margin: 0;
+    font-weight: 600;
+    color: #20349f;
+  }
+  
+  /* General Section */
+  
+  .maang-general{
+    position: relative;
+    padding: 20px 30px 15px 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .maang-name {
+    font-size: 19pt;
+    height: 20pt;
+    width: 100%;
+    text-align: center;
+    font-weight: bolder;
+    border: none;
+    color: #20349f;
+  }
+  
+  .maang-general .info-container{
+    position: relative;
+    font-size: 12pt;
+    text-align: center;
+  }
+
+  .maang-general .horizontal-rule {
+    margin: 7px 0px;
+    height: 0;
+    width: 100%;
+    border-top: 2.3px solid black;
+    opacity: 0.6;
+  }
+
+  .maang-general .info-container a{
+    color: #20349f;
+    text-decoration: none;
+  }
+  
+  .maang-general .info-editor{
+    position: absolute;
+    right: -6.5cm;
+  }
+  
+  .maang-general .info-editor input{
+    width: 6cm;
+    font-size: 12pt;
+    margin: 0.5px 0px;
+  }
+
+  /* Education   */
+
+  #maang-resume {
+    font-family: "PT Serif", serif;
+  }
+  
+  .maang-education {
+    position: relative;
+    padding: 0px 30px 10px;
+  }
+
+  .maang-education .education-unit{
+    margin: 0;
+  }
+ 
+  .maang-education input{
+    border: 0;
+    margin: 0;
+    font-size: 11pt;
+    height: 12pt;
+  }
+
+  /* Skills */
+  .maang-skills {
+    padding: 0px 30px 10px;
+    position: relative;
+    font-size: 11pt;
+  }
+
+  .maang-skills p {
+    display: inline;
+  }
+
+  .maang-skills .skillsHead {
+    font-weight: 600;
+  }
+
+  .maang-skills .skills {
+    padding-left: 5pt;
+  }
+
+  /* Experience */
+
+  .maang-experience {
+    position: relative;
+    padding: 0px 30px 10px;
+  }
+  
+  .maang-experience .experience-unit{
+    margin: 0;
+    margin-bottom: 5px;
+    width: auto;
+  }
+  
+  .maang-experience input{
+    border: 0;
+    margin: 0;
+    font-size: 11pt;
+    width:auto;
+  }
+
+  .maang-experience .info-experience ul{
+    width: 18.75cm;
+    text-align: left;
+    list-style-type: square;
+    margin-bottom: 0;
+    padding-left: 15px;
+  }
+  
+  #experience-description {
+    display: list-item;
+    width: 18.75cm;
+    margin-left: 25px;
+    text-align: left;
+  }
+
+  /* #info-experience div{
+    display: list-item;
+  } */
+
+  /* Project */
+
+  .maang-project {
+    position: relative;
+    padding: 0px 30px 10px;
+  }
+  
+  .maang-project .project-unit{
+    margin: 0;
+    margin-bottom: 5px;
+    width: auto;
+  }
+  
+  .maang-project input{
+    border: 0;
+    margin: 0;
+    font-size: 11pt;
+    width:auto;
+  }
+
+  /* Certifications */
+
+  .maang-certification {
+    position: relative;
+    padding: 0px 30px 10px;
+  }
+  
+  .maang-certification .certification-unit{
+    margin: 0;
+    margin-bottom: 5px;
+    width: auto;
+  }
+  
+  .maang-certification input{
+    border: 0;
+    margin: 0;
+    font-size: 11pt;
+    width:auto;
+  }
+  
+  /* Certification variable length */
+  .dynamic-width-input {
+    font-weight: 600;
+  }
+  
+  .duration-input {
+    width: 6.4cm;
+    text-align: right;
+  }
+  
+  .hidden-span {
+    position: absolute;
+    visibility: hidden;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .fixed-right {
+    position: fixed;
+    right: 0;
+  }
+  
+  /* Achievements */
+
+  .maang-achievement {
+    position: relative;
+    padding: 0px 30px 10px;
+  }
+  
+  .maang-achievement .achievement-unit{
+    margin: 0;
+    margin-bottom: 5px;
+    width: auto;
+  }
+  
+  .maang-achievement input{
+    border: 0;
+    margin: 0;
+    font-size: 11pt;
+    width:auto;
+  }
+  

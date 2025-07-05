@@ -1,0 +1,46 @@
+.header{
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+
+.title{
+  color: #fff;
+}
+
+.header{
+  padding: 1.5vh 2.5vw;
+}
+
+.title{
+  color: #fff;
+  font-size: 3vw;
+  font-weight: 700;
+}
+
+.bl{
+  color: #005BA2;
+}
+
+.sub-title {
+  color: #005BA2;
+  font-size: 1.5vw;
+}
+
+
+
+@media (max-width: 620px) {
+  .title{
+    font-size: 5vh;
+  }
+
+  .sub-title {
+    font-size: 2.5vh;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  /* Styles for devices with a screen width of 1200px or larger */
+}
+

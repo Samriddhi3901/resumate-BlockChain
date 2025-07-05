@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p{
+  margin: 0;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(204, 204, 204);
+}
+
+.bg-gray{
+  background-color: gainsboro;
+}
+
+.bold{
+  font-weight: 700;
+}
+
+.check-box {
+  /* Hide the default checkbox */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  margin-right: 8px;
+  width: 15px;
+  height: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  background-color: #fff;
+}
+
+
+.check-box:before {
+  content: '\2713';
+  color: #005BA2;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.check-box:checked:before {
+  display: block; 
+}
+
+@media print {
+  body {
+    visibility: hidden;
+    border: 1px solid red;
+    height: 29.7cm;
+    width: 21cm;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  html {
+    background-color: white;
+  }
+
+  .resume-container {
+    position: absolute;
+    top: calc(0px);
+    left: 0;
+  }
+
+  .a4-page {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  .warning-line {
+    display: none;
+  }
+
+  .info-editor{
+    display: none;
+  }
+
+  .projects .team-project{
+    display: none;
+  }
+
+  td, th{
+    border: none;
+    outline: none;
+  }
+
+  /* MAANG FORMAT */
+  .add-skills input{
+    display: none;
+  }
+
+  .add-skills button{
+    display: none;
+  }
+
+  @page {
+    margin: 0;
+  }
+}
