@@ -1,4 +1,4 @@
-# Resumate - VIT Bhopal Resume Builder 📄✨
+# Resumate - VIT Bhopal Resume Builder 📄✨!
 
 A specialized resume building web application designed specifically for VIT Bhopal students, featuring the official institutional template and streamlined resume creation process.
 
